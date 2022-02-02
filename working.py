@@ -41,3 +41,7 @@ ws.title = "Grades"
 
 headings = ['Name'] + list(data['Joe'].keys())
 ws.append(headings)
+
+for person in data:
+    grades = list(data[person].values())
+    ws.append([person] + grades)
