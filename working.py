@@ -34,3 +34,10 @@ data = {
         "gym": 60
     }
 }
+
+wb = Workbook()
+ws = wb.active
+ws.title = "Grades"
+
+headings = ['Name'] + list(data['Joe'].keys())
+ws.append(headings)
